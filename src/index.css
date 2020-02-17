@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Ozone";
-  src: url("./Ozone.ttf");
+  font-family: 'Ozone';
+  src: url('./Ozone.ttf');
   font-weight: 400;
   font-style: normal;
 }
@@ -13,17 +13,16 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
+  background-color: beige;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 button {
@@ -32,7 +31,7 @@ button {
   padding: 1rem 2rem;
   margin: 0;
   text-decoration: none;
-  background: #414141;
+  background: black;
   color: #ffffff;
   font-family: inherit;
   font-size: 1.6rem;
@@ -45,7 +44,7 @@ button {
 
 button:hover,
 button:focus {
-  background: #a2272d;
+  background: #ff000d;
 }
 
 button:focus {
@@ -55,4 +54,13 @@ button:focus {
 
 button:active {
   transform: scale(0.99);
+}
+
+#maintitle {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: -70px;
+  font-family: 'Lobster', cursive;
 }

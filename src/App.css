@@ -1,17 +1,17 @@
 :root {
   --black: #0d0d0d;
-  --red: #ff2d2b;
+  --red: white;
 }
 
 .scoreboard {
   width: 58%;
   margin: 10rem auto;
-  background-color: #0b5402;
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 0.5rem;
   margin-top: 10rem;
   padding: 5rem;
-  border: 4px solid #aaaaaa;
+  border: 4px solid black;
 }
 
 .topRow {
@@ -34,11 +34,11 @@
 }
 
 .home {
-  background-color: #656565;
+  background-color: #d80b0b;
 }
 
 .away {
-  background-color: #af750a;
+  background-color: #d80b0b;
 }
 
 .home__name,
@@ -54,7 +54,7 @@
 
 .home__score,
 .away__score {
-  font-family: "Ozone";
+  font-family: 'Ozone';
   font-size: 7rem;
   width: 90%;
   text-align: center;
@@ -64,13 +64,14 @@
 }
 
 .timer {
-  font-family: "Ozone";
+  font-family: 'Ozone';
   font-size: 9rem;
   padding: 2rem;
   text-align: center;
   background-color: var(--black);
   border: 2px solid white;
   border-radius: 6px;
+  color: red;
 }
 
 .bottomRow {
@@ -94,7 +95,7 @@
 .toGo__value,
 .ballOn__value,
 .quarter__value {
-  font-family: "Ozone";
+  font-family: 'Ozone';
   font-size: 5rem;
   color: var(--red);
   width: 7rem;
@@ -107,7 +108,7 @@
 }
 
 .buttons {
-  width: 50%;
+  /* width: 50%; */
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -119,4 +120,10 @@
 .awayButtons__fieldGoal {
   margin: 1rem;
   border-radius: 4px;
+}
+.homeButtons {
+  margin-left: 119px;
+}
+.awayButtons {
+  margin-right: 119px;
 }

@@ -18,6 +18,29 @@ function App() {
   console.log(tigersScore);
   console.log(setTigersScore);
 
+  const [downs, setDowns] = useState(number);
+
+  console.log('this is useState', useState(0));
+  console.log(downs);
+  console.log(setDowns);
+
+  const [togo, setTogo] = useState(number);
+
+  console.log('this is useState', useState(0));
+  console.log(togo);
+  console.log(setTogo);
+
+  const [ballOn, setBallOn] = useState(number);
+
+  console.log('this is useState', useState(0));
+  console.log(ballOn);
+  console.log(setBallOn);
+
+  const [quarter, setQuarter] = useState(number);
+
+  console.log('this is useState', useState(0));
+  console.log(quarter);
+  console.log(setQuarter);
   return (
     <div className="container">
       <section className="scoreboard">
@@ -29,13 +52,22 @@ function App() {
 
             <div className="home__score">{lionsScore}</div>
           </div>
-          <div className="timer">00:03</div>
+          <div className="timer">00:00</div>
           <div className="away">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{tigersScore}</div>
           </div>
         </div>
-        <BottomRow />
+        <BottomRow
+          downsprop={downs}
+          setdownsprop={setDowns}
+          togoprop={togo}
+          setTogoprop={setTogo}
+          ballOnprop={ballOn}
+          setBallOnprop={setBallOn}
+          quarterprop={quarter}
+          setQuarterprop={setQuarter}
+        />
       </section>
       <section className="buttons">
         <div className="homeButtons">
@@ -45,6 +77,20 @@ function App() {
           </button>
           <button onClick={() => setLionsScore(lionsScore + 3)} className="homeButtons__fieldGoal">
             Home Field Goal
+          </button>
+        </div>
+        <div className="miscButtons">
+          <button onClick={() => setDowns(downs + 1)} className="awayButtons__fieldGoal">
+            Downs
+          </button>
+          <button onClick={() => setTogo(togo + 1)} className="awayButtons__fieldGoal">
+            To Go
+          </button>
+          <button onClick={() => setBallOn(ballOn + 1)} className="awayButtons__fieldGoal">
+            Ball On
+          </button>
+          <button onClick={() => setQuarter(quarter + 1)} className="awayButtons__fieldGoal">
+            Quarter
           </button>
         </div>
         <div className="awayButtons">
